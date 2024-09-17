@@ -38,6 +38,9 @@ hexo.extend.helper.register('opengraph_image', function(){
         } else {
             url_path = this.full_url_for(this.path).replace(/index\.html$/, "") +'thumbnail.png';
         }
-        return '<meta property="og:image" content="' + url_path + '" />';
+        return [
+            `<meta property="og:image" content="${url_path}" />`,
+            `<link rel="image_src" href="${url_path}" />`
+        ].join("\n");
     }
 });
