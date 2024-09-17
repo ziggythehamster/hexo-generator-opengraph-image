@@ -7,7 +7,11 @@ hexo.config.opengraph_image = Object.assign({
   secondary_color: "#000",
   font_color: "#000",
   title_font: "Bold 70pt Arial",
+  title_font_file: null,
+  title_font_file_family: null,
   date_font: "Regular 30pt Arial",
+  date_font_file: null,
+  date_font_file_family: null,
   date_style: "YYYY/MM/DD",
 }, hexo.config.opengraph_image);
 
