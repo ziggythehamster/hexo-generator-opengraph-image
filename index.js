@@ -3,6 +3,7 @@
 
 hexo.config.opengraph_image = Object.assign({
   enable: true,
+  blog_logo: null,
   blog_title: false,
   blog_title_font: "Regular 25pt Arial",
   blog_title_font_file: null,
