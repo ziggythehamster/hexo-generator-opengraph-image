@@ -41,6 +41,7 @@ hexo.extend.helper.register('opengraph_image', function(){
         }
         return [
             `<meta property="og:image" content="${url_path}" />`,
+            `<meta name="twitter:image" content="${url_path}" />`,
             `<link rel="image_src" href="${url_path}" />`
         ].join("\n");
     }
